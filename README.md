@@ -8,3 +8,5 @@ The built-in fallback type that guarantees every item in the library has at leas
 - Avoid an "unclassified" dead-end state for any incoming content
 - Reclassify an item to a more specific artifact type at any time
 - Attach a generic item as untyped context to chats and agents that accept it
+
+<!-- ruleset verification probe 2026-06-10; PR will be closed unmerged -->
