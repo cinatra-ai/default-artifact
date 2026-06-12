@@ -19,6 +19,9 @@
   "cinatra": {
     "apiVersion": "cinatra.ai/v1",
     "kind": "artifact",
+    "roles": [
+      "artifact-default-floor"
+    ],
     "dependencies": [],
     "artifact": {
       "accepts": {
