@@ -37,6 +37,7 @@
         },
         "dashboard": true
       }
-    }
+    },
+    "consumes": []
   }
 }
