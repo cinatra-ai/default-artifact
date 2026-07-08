@@ -19,6 +19,7 @@
   "cinatra": {
     "apiVersion": "cinatra.ai/v1",
     "kind": "artifact",
+    "displayName": "Default Artifact",
     "roles": [
       "artifact-default-floor"
     ],
