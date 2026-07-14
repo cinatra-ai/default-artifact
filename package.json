@@ -37,7 +37,22 @@
           ]
         },
         "dashboard": true
-      }
+      },
+      "objectTypes": [
+        {
+          "type": "@cinatra-ai/objects:object",
+          "claim": "default",
+          "dispositions": {
+            "projection": "artifact-safe",
+            "pinnable": false,
+            "snapshotPolicy": "none",
+            "sensitivity": "normal"
+          },
+          "schema": {
+            "type": "object"
+          }
+        }
+      ]
     }
   }
 }
