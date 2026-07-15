@@ -20,6 +20,10 @@
     "apiVersion": "cinatra.ai/v1",
     "kind": "artifact",
     "displayName": "Default Artifact",
+    "vendor": {
+      "key": "cinatra-ai",
+      "name": "Cinatra"
+    },
     "roles": [
       "artifact-default-floor"
     ],
