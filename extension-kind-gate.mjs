@@ -1070,7 +1070,7 @@ export function validateConnector(packageRoot) {
 // artifact gate — mirror of packages/extensions/src/artifact-handler.validate.
 // ===========================================================================
 export const ARTIFACT_NAME_RE = /^@cinatra-ai\/[a-z0-9][a-z0-9-]*-artifact$/;
-export const ARTIFACT_ALLOWED_CINATRA_KEYS = new Set(["kind", "apiVersion", "artifact", "dependencies", "roles", "displayName"]);
+export const ARTIFACT_ALLOWED_CINATRA_KEYS = new Set(["kind", "apiVersion", "artifact", "dependencies", "roles", "displayName", "vendor"]);
 
 const SKILL_REF_IS_INVALID = (s) => /\.md$/i.test(s) || /^\.{0,2}\//.test(s) || s.startsWith("/");
 const ARTIFACT_FORMS = new Set(["file", "connectorRef", "dashboard"]);
@@ -1286,7 +1286,7 @@ export function validateArtifactPackageShape(pkg) {
   }
   for (const k of Object.keys(cinatra)) {
     if (!ARTIFACT_ALLOWED_CINATRA_KEYS.has(k)) {
-      errors.push(`artifact extensions may only declare cinatra.{kind,apiVersion,artifact,dependencies,roles,displayName}; unexpected key "${k}"`);
+      errors.push(`artifact extensions may only declare cinatra.{kind,apiVersion,artifact,dependencies,roles,displayName,vendor}; unexpected key "${k}"`);
     }
   }
   return errors;
